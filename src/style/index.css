@@ -1,0 +1,344 @@
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* SELECTION */
+
+::selection {
+    color: red;
+    background: yellow;
+}
+
+/*  LINK */
+
+a:link {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(2, 111, 255);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: rgb(0, 43, 11);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+
+/* TOP NAVIGATION */
+.navbar {
+    text-align: center;
+    color: black;
+    width: 100%;
+    margin: auto;
+    padding-block-start: 10px;
+    padding-block-end: 10px;
+    background-color: aqua;
+}
+
+nav{
+    color: rgb(0, 0, 0);
+}
+nav:active{
+    color: rgb(0, 0, 0);
+}
+nav:hover{
+    color: black;
+}
+nav:visited{
+    color: black;
+}
+nav:link{
+    color: black;
+}
+
+
+/* FONT */
+.tomorrow-thin {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.tomorrow-extralight {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.tomorrow-light {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.tomorrow-regular {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.tomorrow-medium {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.tomorrow-semibold {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.tomorrow-bold {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.tomorrow-extrabold {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.tomorrow-black {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.tomorrow-thin-italic {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.tomorrow-extralight-italic {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.tomorrow-light-italic {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.tomorrow-regular-italic {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.tomorrow-medium-italic {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.tomorrow-semibold-italic {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.tomorrow-bold-italic {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.tomorrow-extrabold-italic {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.tomorrow-black-italic {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  box-sizing: border-box;
+}
+
+.header-item{
+  display: grid;
+  color: #1a1a1a;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: rgb(255, 255, 255);
+  height: fit-content;
+  width: 100%;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 102px;
+}   
+
+.logo-container{
+    justify-self: left;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+}
+
+.title{
+    margin: auto;
+    justify-self: center;
+    white-space: nowrap;
+}
+
+body {
+  background-color: blue;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-size: 100% 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+
+/* RUNNING TEXT */
+.wrapper {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0;
+}
+
+.marquee {
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: marquee 9s linear infinite;
+}
+
+.marquee p {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+  @keyframes marquee {
+0% {
+    transform: translate3d(0, 0, 0);
+}
+100% {
+    transform: translate3d(-50%, 0, 0);
+}
+}
+
+/* GRID LAYOUT WEBSITE BODY */
+div.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+div.flex-container > div {
+    margin: 10px;
+}
+
+/* Use media query and show the flex items vertically if screen width is less than 600px */
+@media screen and (max-width:600px) {
+    div.flex-container {
+        flex-direction: column;
+    }
+}
+
+.content {
+    padding: 16px;
+    margin-top: 69px;
+    opacity: 0;
+}
+
+    /* SIDE CONTENT */
+    .side-content{
+    
+    }
+
+    /* MAIN CONTENT */
+    .main-content{
+
+    }
+
+
+/* FOOTER */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
