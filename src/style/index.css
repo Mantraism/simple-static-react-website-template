@@ -320,7 +320,7 @@ div.flex-container > div {
 .content {
     padding: 16px;
     margin-top: 69px;
-    opacity: 0;
+    opacity: 100;
 }
 
     /* SIDE CONTENT */

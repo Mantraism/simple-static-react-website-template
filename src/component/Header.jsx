@@ -15,6 +15,22 @@ function Header(){
                     title={title}
                 />
             </header>
+            <div className="navbar">
+                <nav className="tomorrow-semibold">
+                    <a className="active" href="index.html">Home</a>
+                    <a href="#news">News</a>
+                    <a href="#contact">Contact</a>
+                    <a href="pages/about.html" target="_blank">About</a>
+                </nav>
+            </div>
+            <div className="wrapper">
+            <div className="marquee">
+                <p className="tomorrow-regular">running text running text running text running text running text running text running text running text running text running text running text running text running text running text 
+                </p>
+                <p className="tomorrow-regular">running text running text running text running text running text running text running text running text running text running text running text running text running text running text 
+                </p>
+            </div>
+            </div>
         </div>
 
     )
